@@ -245,6 +245,6 @@ df = gridmet.extract_variable_for_point_over_years("pr", lat, lon, start_year, e
 
 # Extract polygon
 import geopandas as gpd
-shapefile = gpd.read_file(r"C:\Users\CL\Documents\GitHub\YakimaRiverBasin\gis\yrb_data\yrb_umtw_catchment.shp")
+shapefile = gpd.read_file(r"xxx.shp")
 df = gridmet.extract_variable_for_shapefile_over_years("pr", shapefile, start_year, end_year, operation="mean", file_template="{var}_{year}.nc")
 """
